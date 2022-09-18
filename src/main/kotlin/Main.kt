@@ -1,3 +1,9 @@
+//<<<<<<< HEAD
+//=======
+//<<<<<<< HEAD
+
+//=======
+//>>>>>>> edwin
 fun main(parametro: Array<String>) {
 
 
@@ -9,6 +15,7 @@ fun main(parametro: Array<String>) {
 
 //INICIO DE LOGIN
 
+//<<<<<<< HEAD
     val empleado = Usuario()
 
     empleado.carga()
@@ -16,4 +23,12 @@ fun main(parametro: Array<String>) {
     empleado.continuar()
     empleado.cambiocontra()
     empleado.menu()
+//<<<<<<< HEAD
 }
+//=======
+
+//>>>>>>> origin/Rony
+
+
+
+//>>>>>>> edwin

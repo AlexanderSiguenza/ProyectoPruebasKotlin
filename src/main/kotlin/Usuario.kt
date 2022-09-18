@@ -1,3 +1,5 @@
+import kotlin.system.exitProcess
+
 class Usuario() {
     var op: Int=0
     var usuario: String =""
@@ -74,43 +76,34 @@ class Usuario() {
 
         println("Escriba su codigo, contraseña actual,contraseña nueva separados por comas")
         println(
-            "1,admin/admin123\n" +
-                    "2,vendedor/vendedor123\n" +
-                    "3,invitado/invitado123")
-
+            "1-admin/admin123\n" +
+                    "2-vendedor/vendedor123\n" +
+                    "3-invitado/invitado123")
 
 
         val str = readLine()!!.toString()
-
-
-
         val list: List<String> = str.split(",").toList()
-        var cambio = list[2]
+        var  cambio=list[2]
 
-        if (list[0] == "1" && list[1] == "admin123" && cambio == cambio) {
-            println(
-                "Contraseña actualizada con exito\n" +
-                        "porfavor inicie seccion denuevo"
-            )
+        if (list[0]=="1" && list[1]=="admin123" && cambio==cambio){
+            println("Contraseña actualizada con exito\n" +
+                    "porfavor inicie seccion denuevo")
 
             this.carga()
-            if (usuario == "admin" && contrasena == cambio) {
+            if (usuario=="admin"&& contrasena==cambio){
                 println("Usuario correcto.Bienvenido Admin")
-
-            } else {
+                this.menu()
+            }else{
                 println("usuaro incorrecto. Intentelo de nuevo")
                 this.carga()
             }
 
-        } else {
-            println(
-                "Parametros incorrectos asegurese de que su codigo y contraseña actual sean correctas\n" +
-                        "vueva a intentarlo de nuevo"
-            )
+        }
+        else{
+            println("Parametros incorrectos asegurese de que su codigo y contraseña actual sean correctas\n" +
+                    "vueva a intentarlo de nuevo")
             println(cambiocontra())
         }
-
-
     }
 
     fun menu() {
@@ -154,7 +147,7 @@ class Usuario() {
 
             4 -> {
                 println("Gracias por ingresar a Farmacia Fiorella, que tenga un buen dia!")
-
+                exitProcess(0)
             }
 
             else -> {
@@ -164,4 +157,23 @@ class Usuario() {
         }
 
 
-    }}
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
