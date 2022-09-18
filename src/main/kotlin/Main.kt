@@ -1,6 +1,34 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+//<<<<<<< HEAD
+//=======
+//<<<<<<< HEAD
+
+//=======
+//>>>>>>> edwin
+fun main(parametro: Array<String>) {
+
+
+    println(".....................................................")
+    println(".... BIENVENIDO AL SISTEMA DE FARMACIA FIORELLA.....")
+    println("........... FAVOR INGRESAR SUS CREDENCIALES ..........")
+    println(".....................................................")
+
+
+//INICIO DE LOGIN
+
+//<<<<<<< HEAD
+    val empleado = Usuario()
+
+    empleado.carga()
+    empleado.validacion()
+    empleado.continuar()
+    empleado.cambiocontra()
+    empleado.menu()
+//<<<<<<< HEAD
 }
+//=======
+
+//>>>>>>> origin/Rony
+
+
+
+//>>>>>>> edwin
