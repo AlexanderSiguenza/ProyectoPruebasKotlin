@@ -44,7 +44,9 @@ class Usuario() {
             if(leer== "s") {
                 this.carga()
                 this.validacion()
-            }else("feliz día")
+            }else
+                   println("feliz día")
+            exitProcess(0)
 
         } else {
 
